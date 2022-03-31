@@ -11,7 +11,8 @@ contract TToken {
 	event Transfer(address indexed _from, address indexed _to, uint _amount);
 	event Approval(address indexed _owner, address indexed _spender, uint _amount);
 
-	constructor(uint _initialSupply, string memory _name, string memory _symbol ) public {
+	constructor(uint _initialSupply, string memory _name, 
+										string memory _symbol ) public {
 		name = _name;
 		symbol = _symbol;
 		balanceOf[msg.sender] = _initialSupply;
