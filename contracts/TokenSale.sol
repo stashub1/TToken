@@ -19,7 +19,6 @@ contract TokenSale {
 		 tokenPrice = _tokenPrice;
 
 	}
-	//multiply
 
 	function buyTokens(uint _numberOfTokens) public payable {
 		require(msg.value == SafeMath.mul(_numberOfTokens,tokenPrice), "Value passed is wrong");
